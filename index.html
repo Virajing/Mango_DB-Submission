@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create User</title>
+</head>
+<body>
+  <h1>Create a New User</h1>
+  
+  <!-- Form to capture user details -->
+  <form action="/create" method="POST">
+    <!-- Name Field -->
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <!-- Email Field -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <!-- Username Field -->
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br><br>
+    
+    <!-- Date Field -->
+    <label for="date">Date of Birth:</label><br>
+    <input type="date" id="date" name="date" required><br><br>
+    
+    <!-- Subject Dropdown -->
+    <label for="subject">Select Subject:</label><br>
+    <select name="subject" id="subject" required>
+      <option value="" disabled selected>Select your subject</option>
+      <option value="Mathematics">Mathematics</option>
+      <option value="Science">Science</option>
+      <option value="English">English</option>
+      <option value="History">History</option>
+      <option value="Geography">Geography</option>
+    </select><br><br>
+    
+    <!-- Submit Button -->
+    <input type="submit" value="Create User">
+  </form>
+</body>
+</html>
